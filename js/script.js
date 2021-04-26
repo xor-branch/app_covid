@@ -120,7 +120,7 @@ function sendEmail() {
         To: "irotoribaroka@yahoo.fr", mail,
         From: "birotori@gmail.com",
         Subject: "INFO COVID",
-        Body: '<html><h2>Bonjour Mr / Mme :' + name_user + '</h2></html>'
+        Body: '<html><h2>Bonjour Mr / Mme :' + name_user + '</h2><p>${message}</p></html>'
     })
         .then(function (message) {
             location.href = 'index.html';
