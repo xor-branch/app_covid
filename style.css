@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(/bg2.jpeg) no-repeat center/cover;
+    background: url(images/bg2.jpeg) no-repeat center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
