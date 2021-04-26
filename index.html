@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ COVID</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header quiz-container">
+        <img src="/logo.png" alt="">
+        <h2>PRENEZ SOIN DE VOUS ET DES AUTRES</h2>
+        <small><a href="https://www.gouv.bj/coronavirus/">COVID INFO</a></small>
+    </div>
+    <br>
+    <div class="quiz-container">
+
+        <div class="mailer">
+            <form action="/quiz.html">
+                <div class="field">
+                    <label for="name">Nom et Prénom</label>
+                    <input name="name" id="name">
+                </div>
+                <div class="field">
+                    <label for="Pays">Pays</label>
+                    <input name="Pays" id="contry">
+                </div>
+                <div class="field">
+                    <label for="Ville">Ville</label>
+                    <input name="Ville" id="state">
+                </div>
+                <div class="field">
+                    <label for="mail">Votre adresse mail</label>
+                    <input name="mail" id="mail">
+                </div>
+                <div class="field">
+                    <label for="Téléphone">Téléphone</label>
+                    <input name="Téléphone" id="phone">
+                </div>
+                <div class="">
+                    <button onclick="stock_user_info()">COMMENCER</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function stock_user_info() {
+            var name_user = document.getElementById("name");
+            var contry = document.getElementById("contry");
+            var state = document.getElementById("state");
+            var phone = document.getElementById("phone");
+            var mail = document.getElementById("mail");
+
+            localStorage.setItem("name_user", name_user.value);
+            localStorage.setItem("contry", contry.value);
+            localStorage.setItem("state", state.value);
+            localStorage.setItem("phone", phone.value);
+            localStorage.setItem("mail", mail.value);
+
+        }
+    </script>
+</body>
+
+</html>

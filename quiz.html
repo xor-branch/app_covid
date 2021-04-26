@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header quiz-container">
+        <img src="/logo.png" alt="">
+        <h2>PRENEZ SOIN DE VOUS ET DES AUTRES</h2>
+        <small><a href="https://www.gouv.bj/coronavirus/">COVID INFO</a></small>
+    </div>
+    <br>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer" />
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer" />
+                    <label id="b_text" for="b">Question</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Suivant</button>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </div>
+</body>
+
+</html>
